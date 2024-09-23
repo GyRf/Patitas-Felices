@@ -1,0 +1,8 @@
+git clone https://github.com/GyRf/Patitas-Felices.git
+git config --global user.name "yahir sosa"
+git config --global user.email "sosaomotyayahir@gmail.com"
+git pull
+git checkout master
+git Branch backend-testing
+git checkout backend-testing
+git pull
