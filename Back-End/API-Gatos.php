@@ -25,7 +25,6 @@ $cats = [
 
 // Obtener el método HTTP
 $method = $_SERVER['REQUEST_METHOD'];
-
 // Procesar la solicitud según el método HTTP
 switch ($method) {
     case 'GET':
@@ -34,7 +33,7 @@ switch ($method) {
             $catId = (int) $_GET['id'];
             getCatById($catId, $cats);
         } else {
-            getCats($cats);
+            getCatss($cats);
         }
         break;
 
