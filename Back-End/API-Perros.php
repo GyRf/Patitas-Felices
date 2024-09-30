@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
 // Middleware para interpretar JSON en las solicitudes
 app.use(express.json());
 
@@ -25,6 +26,7 @@ app.get('/perros', (req, res) => {
     res.json(perros);
 });
 
+
 // Ruta para obtener un perro por su ID
 app.get('/perros/:id', (req, res) => {
     const id = parseInt(req.params.id);
@@ -36,6 +38,7 @@ app.get('/perros/:id', (req, res) => {
         res.status(404).json({ mensaje: 'Perro no encontrado' });
     }
 });
+
 
 // Ruta para agregar un nuevo perro
 app.post('/perros', (req, res) => {
@@ -77,5 +80,9 @@ app.listen(port, () => {
     console.log(`Servidor de la API de perros corriendo en http://localhost:${port}`);
 });
 
+<<<<<<< HEAD
 // modificacion en la conexion de la db aaaa
 
+=======
+//comentario del Yañez
+>>>>>>> 8ca72b9e63d6fcd0d8ed6a30a21dc1d1af60958c
