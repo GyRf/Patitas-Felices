@@ -1,3 +1,4 @@
+<?php
 // Importar express
 const express = require('express');
 const app = express();
@@ -10,7 +11,8 @@ app.use(express.json());
 let perros = [
     { id: 1, nombre: 'Firulais', raza: 'Pastor Alemán', edad: 3 },
     { id: 2, nombre: 'Max', raza: 'Golden Retriever', edad: 2 },
-    { id: 3, nombre: 'Luna', raza: 'Beagle', edad: 5 }
+    { id: 3, nombre: 'Luna', raza: 'Beagle', edad: 5 },
+    { id: 3, nombre: 'pupi', raza: 'Border Coli', edad: 7}
 ];
 
 // Ruta principal
